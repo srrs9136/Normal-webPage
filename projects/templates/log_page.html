@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="static/demo.css" rel="stylesheet">
+    </head>
+    <body>
+        <form action="1" method="POST">
+            {% csrf_token %}
+        <div class="wl">
+            <h2>| Welcome Page |</h2> 
+            <hr>
+            <br> 
+            <input name ="userN"type="text" placeholder="UserName"><br>
+            <br>
+            <input name ="youfN"type="text" placeholder="YouFrom">
+            <br>
+            <br>
+        
+          <button type="submit">submit</button>
+          <a class="btn btn-primary btn btn-dark" href="1" role="button">HomePage</a>
+        </div>
+    </form>
+    {% for i in  list   %}
+    {{i.UserName}}
+    {{i.userpassword}}
+      
+    {% endfor %}
+    <a class="btn btn-primary btn btn-dark" href="1" role="button">HomePage</a>
+    
+ 
+    </body>
+</html>
